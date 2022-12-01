@@ -10,17 +10,13 @@ import (
 )
 
 func main() {
-	supportedYears := map[int]bool{
-		2022: true,
-	}
-
 	year := flag.Int("year", 0, "The year to run")
 	day := flag.Int("day", 0, "The day of code to run")
 	part := flag.Int("part", 0, "The part of the code to run, 1 or 2")
 
 	flag.Parse()
 
-	if _, ok := supportedYears[*year]; !ok {
+	if !common.IsYearSupported(*year) {
 		log.Fatalf("Year %d is not supported", *year)
 	}
 
@@ -32,11 +28,11 @@ func main() {
 		log.Fatal("You must specify the part to run")
 	}
 
-	sol := common.GetSolution(*year, *day, *part)
+	solution := common.GetSolution(*year, *day, *part)
 
-	s := time.Now()
+	start := time.Now()
 	defer func() {
-		log.Printf("took: %v", time.Since(s))
+		log.Printf("took: %v", time.Since(start))
 	}()
-	sol()
+	solution()
 }

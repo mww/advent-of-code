@@ -6,6 +6,6 @@ import (
 )
 
 func init() {
-	common.RegisterSolution(2022, 1, 1, dec01.P1)
-	common.RegisterSolution(2022, 1, 2, dec01.P2)
+	common.RegisterSolution(&common.ID{Year: 2022, Day: 1, Part: 1}, dec01.P1)
+	common.RegisterSolution(&common.ID{Year: 2022, Day: 1, Part: 2}, dec01.P2)
 }

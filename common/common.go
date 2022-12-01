@@ -8,17 +8,26 @@ import (
 	"strconv"
 )
 
+type ID struct {
+	Year int
+	Day  int
+	Part int
+}
+
 type Solution func()
 
 var solutions map[string]Solution
+var supportedYears map[int]bool
 
 func init() {
 	solutions = make(map[string]Solution)
+	supportedYears = make(map[int]bool)
 }
 
-func RegisterSolution(year, day, part int, sol Solution) {
-	key := fmt.Sprintf("%d-%02d-%d", year, day, part)
+func RegisterSolution(id *ID, sol Solution) {
+	key := fmt.Sprintf("%d-%02d-%d", id.Year, id.Day, id.Part)
 	solutions[key] = sol
+	supportedYears[id.Year] = true
 }
 
 func GetSolution(year, day, part int) Solution {
@@ -28,6 +37,11 @@ func GetSolution(year, day, part int) Solution {
 		log.Fatalf("no solution registered for year %d, day %02d, part %d", year, day, part)
 	}
 	return sol
+}
+
+func IsYearSupported(year int) bool {
+	_, ok := supportedYears[year]
+	return ok
 }
 
 func ReadFile(filename string) []string {
