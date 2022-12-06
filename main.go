@@ -5,9 +5,9 @@ import (
 	"log"
 	"time"
 
-	_ "theelements.org/advent_of_code/2021"
-	_ "theelements.org/advent_of_code/2022"
-	"theelements.org/advent_of_code/common"
+	_ "theelements.org/advent-of-code/2021"
+	_ "theelements.org/advent-of-code/2022"
+	"theelements.org/advent-of-code/common"
 )
 
 func main() {

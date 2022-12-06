@@ -1,8 +1,8 @@
 package year2021
 
 import (
-	"theelements.org/advent_of_code/2021/day06"
-	"theelements.org/advent_of_code/common"
+	"theelements.org/advent-of-code/2021/day06"
+	"theelements.org/advent-of-code/common"
 )
 
 func init() {

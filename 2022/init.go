@@ -1,11 +1,11 @@
 package year2022
 
 import (
-	"theelements.org/advent_of_code/2022/dec01"
-	"theelements.org/advent_of_code/2022/dec02"
-	"theelements.org/advent_of_code/2022/dec03"
-	"theelements.org/advent_of_code/2022/dec04"
-	"theelements.org/advent_of_code/common"
+	"theelements.org/advent-of-code/2022/dec01"
+	"theelements.org/advent-of-code/2022/dec02"
+	"theelements.org/advent-of-code/2022/dec03"
+	"theelements.org/advent-of-code/2022/dec04"
+	"theelements.org/advent-of-code/common"
 )
 
 func init() {

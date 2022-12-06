@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"theelements.org/advent_of_code/common"
+	"theelements.org/advent-of-code/common"
 )
 
 func P1() {
