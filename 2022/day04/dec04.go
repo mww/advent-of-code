@@ -1,4 +1,4 @@
-package dec04
+package day04
 
 import (
 	"fmt"
@@ -9,7 +9,7 @@ import (
 )
 
 func P1() {
-	lines := common.ReadFile("./2022/dec04/input.txt")
+	lines := common.ReadFile("./2022/day04/input.txt")
 
 	count := 0
 	for _, l := range lines {
@@ -36,7 +36,7 @@ func P1() {
 }
 
 func P2() {
-	lines := common.ReadFile("./2022/dec04/input.txt")
+	lines := common.ReadFile("./2022/day04/input.txt")
 
 	overlap := 0
 	for _, l := range lines {

@@ -1,4 +1,4 @@
-package dec01
+package day01
 
 import (
 	"fmt"
@@ -22,7 +22,7 @@ func P2() {
 }
 
 func getTotalsPerElf() []int {
-	lines := common.ReadFile("./2022/dec01/part-1-input.txt")
+	lines := common.ReadFile("./2022/day01/part-1-input.txt")
 	//lines := common.ReadFile("./dec01/test-input.txt")
 	// Add a blank line to the end of the input so that we trigger summing
 	// all of the calories for the final elf.

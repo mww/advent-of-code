@@ -1,4 +1,4 @@
-package dec02
+package day02
 
 import (
 	"fmt"
@@ -74,7 +74,7 @@ func getRPS(i string) RPS {
 }
 
 func P1() {
-	lines := common.ReadFile("./2022/dec02/part-1-input.txt")
+	lines := common.ReadFile("./2022/day02/part-1-input.txt")
 
 	score := 0
 	for _, l := range lines {
@@ -93,7 +93,7 @@ func P1() {
 }
 
 func P2() {
-	lines := common.ReadFile("./2022/dec02/part-1-input.txt")
+	lines := common.ReadFile("./2022/day02/part-1-input.txt")
 
 	score := 0
 	for _, l := range lines {

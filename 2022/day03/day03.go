@@ -1,4 +1,4 @@
-package dec03
+package day03
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 )
 
 func P1() {
-	packs := common.ReadFile("./2022/dec03/input.txt")
+	packs := common.ReadFile("./2022/day03/input.txt")
 
 	letterScores := make(map[rune]int)
 	for i, l := range "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" {
@@ -46,7 +46,7 @@ func P1() {
 }
 
 func P2() {
-	packs := common.ReadFile("./2022/dec03/input.txt")
+	packs := common.ReadFile("./2022/day03/input.txt")
 
 	letterScores := make(map[rune]int)
 	for i, l := range "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" {
