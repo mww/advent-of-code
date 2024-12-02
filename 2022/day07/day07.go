@@ -1,7 +1,5 @@
 package day07
 
-import "theelements.org/advent-of-code/common"
-
 func P1() {
 
 }
@@ -18,8 +16,5 @@ type Node struct {
 }
 
 func Parse(f string) *Node {
-	lines := common.ReadFile(f)
-	for _, l := range lines {
-
-	}
+	return nil
 }

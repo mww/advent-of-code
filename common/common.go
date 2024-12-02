@@ -9,9 +9,10 @@ import (
 )
 
 type ID struct {
-	Year int
-	Day  int
-	Part int
+	Year   int
+	Day    int
+	Part   int
+	Sample bool
 }
 
 type Solution func()
@@ -25,13 +26,13 @@ func init() {
 }
 
 func RegisterSolution(id *ID, sol Solution) {
-	key := fmt.Sprintf("%d-%02d-%d", id.Year, id.Day, id.Part)
+	key := fmt.Sprintf("%d-%02d-%d-%v", id.Year, id.Day, id.Part, id.Sample)
 	solutions[key] = sol
 	supportedYears[id.Year] = true
 }
 
-func GetSolution(year, day, part int) Solution {
-	key := fmt.Sprintf("%d-%02d-%d", year, day, part)
+func GetSolution(year, day, part int, sample bool) Solution {
+	key := fmt.Sprintf("%d-%02d-%d-%v", year, day, part, sample)
 	sol, ok := solutions[key]
 	if !ok {
 		log.Fatalf("no solution registered for year %d, day %02d, part %d", year, day, part)
