@@ -72,3 +72,11 @@ func Atoi(num string) int {
 	}
 	return i
 }
+
+func Atoi64(i string) int64 {
+	v, err := strconv.ParseInt(i, 10, 64)
+	if err != nil {
+		log.Fatal(err)
+	}
+	return v
+}
