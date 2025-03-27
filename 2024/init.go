@@ -10,6 +10,7 @@ import (
 	"theelements.org/advent-of-code/2024/day07"
 	"theelements.org/advent-of-code/2024/day08"
 	"theelements.org/advent-of-code/2024/day09"
+	"theelements.org/advent-of-code/2024/day10"
 	"theelements.org/advent-of-code/common"
 )
 
@@ -44,4 +45,7 @@ func init() {
 
 	common.RegisterSolution(&common.ID{Year: 2024, Day: 9, Part: 1}, day09.P1)
 	common.RegisterSolution(&common.ID{Year: 2024, Day: 9, Part: 2}, day09.P2)
+
+	common.RegisterSolution(&common.ID{Year: 2024, Day: 10, Part: 1}, day10.P1)
+	common.RegisterSolution(&common.ID{Year: 2024, Day: 10, Part: 2}, day10.P2)
 }
